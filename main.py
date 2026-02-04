@@ -31,7 +31,7 @@ def main():
     app.add_handler(CommandHandler("help", help_command))
     app.add_handler(CommandHandler("osintname", osint_name))
     app.add_handler(CommandHandler("osintuser", osint_user))
-    app.add_handler(CommandHandler("osintemail", osint_mail))
+    app.add_handler(CommandHandler("osintmail", osint_mail))
     app.add_handler(CommandHandler("osintphone", osint_phone))
 
     print("Bot is running... Press Ctrl+C to stop.")
