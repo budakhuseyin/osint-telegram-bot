@@ -1,11 +1,29 @@
-from osint import start_command, help_command,osint_name,osint_mail,osint_phone,osint_user,token
-from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
+from flask import Flask
+from threading import Thread
+from osint import start_command, help_command, osint_name, osint_mail, osint_phone, osint_user, token
+from telegram.ext import ApplicationBuilder, CommandHandler
+
+app_flask = Flask('')
+
+@app_flask.route('/')
+def home():
+    return "Bot is running!"
+
+def run():
+
+    app_flask.run(host='0.0.0.0', port=8000)
+
+def keep_alive():
+    t = Thread(target=run)
+    t.start()
 
 
 def main():
     if not token:
-        print("Error: BOT_TOKEN not found in .env file")
+        print("Error: BOT_TOKEN not found!")
         return
+
+    keep_alive()
 
     app = ApplicationBuilder().token(token).build()
 
