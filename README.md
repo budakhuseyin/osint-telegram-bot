@@ -23,8 +23,8 @@ This is a specialized Open Source Intelligence (OSINT) tool integrated with Tele
 ## Installation
 
 1. Clone the repository:
-   git clone https://github.com/username/repository-name.git
-   cd repository-name
+   git clone https://github.com/budakhuseyin/osint-telegram-bot.git
+   cd osint-telegram-bot
 
 2. Install required dependencies:
    pip install -r requirements.txt
