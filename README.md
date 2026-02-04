@@ -8,7 +8,7 @@ This tool is developed for educational and ethical security research purposes on
 ## Live Demo
 You can interact with the live version of this bot directly on Telegram. Feel free to test its functionalities by clicking the link below:
 
-[Try the Bot on Telegram](https://t.me/OpenSourceEye_bot)
+<a href="https://t.me/OpenSourceEye_bot" target="_blank">OpenSourceEye OSINT Bot</a>
 
 *Note: The bot is hosted on a free tier service; if it doesn't respond immediately, it might be in sleep mode or undergoing maintenance.*
 
